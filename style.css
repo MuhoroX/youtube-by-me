@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* icons weight */
+.material-symbols-outlined {
+    font-variation-settings: "wght" 150;
+}
+
+
+.video-icon .material-symbols-outlined, .noti-icon .material-symbols-outlined {
+    font-variation-settings: "wght" 300;  
+}
+
+.user-icon .material-symbols-outlined {
+    font-variation-settings: "wght" 400;
+}
+
+.nav-link .material-symbols-outlined {
+    font-variation-settings: "wght" 300;
+
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5.6rem;
+    padding: 1rem 2rem;
+}
+
+/* left section*/
+.left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2.5rem;
+}
+
+.logo img {
+    width: 9.5rem;
+}
+
+.menu-icon a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-icon a span {
+    font-size: 3rem;
+}
+
+/* mid section */
+.mid-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2.9rem;
+}
+ 
+.mid-section form {
+    display: flex;
+    justify-content: center;
+    width: 55rem;
+}
+
+.mid-section form input {
+    flex: 1;
+    padding: 1rem 1.8rem;
+    border: rgba(183, 183, 183, 0.632) solid 0.1rem;
+    border-radius: 2.2rem 0  0 2.2rem;
+    font-size: 1.5rem;
+    border-right: none;
+    outline: none;
+}
+
+.mid-section form input:focus {
+    box-shadow: 0 0 2px inset rgb(1, 30, 103);
+    border: rgba(0, 21, 255, 0.632) solid 0.1rem;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+}
+
+.mid-section button {
+    text-align: center;
+    padding: 0.3rem 2rem;
+    border-radius: 0 2.2rem 2.2rem 0;
+    border: rgba(183, 183, 183, 0.632) solid 0.1rem;
+    cursor: pointer;
+    background: #fbfafa;
+    transition: 0.2s;
+}
+
+.mid-section button:hover {
+    background: #f0f0f0;
+}
+
+.mid-section button span {
+    font-size: 2.8rem;
+}
+
+.mic-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.mic-icon:hover {
+    background-color: #e4e4e4;
+}
+
+/* right section*/
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 2rem;
+    margin-right: 1.5rem;
+}
+
+.right-section a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.right-section .video-icon:hover,
+.noti-icon:hover {
+    background-color: #e4e4e4;
+}
+
+.right-section .user-icon span {
+    font-size: 3.5rem;
+}
+
+.right-section .video-icon span,
+.right-section .noti-icon span {
+    font-size: 2.5rem;
+}
+
+/* main content */
+.area-container {
+    height: calc(100vh - 56px);
+    display: flex;
+}
+
+/* navigation */
+aside {
+    height: 100%;
+    width: 256px;
+    overflow-y: hidden;
+}
+
+aside:hover {
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+/* for all links inside bar*/
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 1.2rem;
+}
+
+.nav-link p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav-link i {
+    font-size: 2rem;
+    margin-right: 3rem;
+}
+
+.nav-link span {
+    font-size: 2.5rem;
+    margin-right: 3rem;
+}
+
+.nav-link:hover {
+    background-color: #f3f3f3;
+}
+
+.nav-link:focus{
+    outline: none;
+    background-color: #f1f0f0;
+}
+
+.nav-link:focus p{
+    font-weight: 500;
+}
+
+/* first section*/
+.first-seciton {
+    padding-bottom: 1rem;
+    border-bottom : solid 1px rgb(194, 194, 194);
+}
+
+.first-seciton .nav-link {
+    padding: 0.8rem 1rem;
+}
+
+/* .active {
+    background-color: #f1f0f0;
+} */
+
+/* you section */
+.you-section {
+    padding: 1.2rem 0;
+    border-bottom : solid 1px rgb(194, 194, 194);
+}
+
+.you-section .nav-link {
+    padding: 0.7rem 1rem;
+}
+
+.you-section .you-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+/* Subscriptions section */
+.subs-section {
+    padding: 1.2rem 0;
+    border-bottom : solid 1px rgb(194, 194, 194);
+}
+
+.subs-section .nav-link,
+.subs-title{
+    padding: 0.8rem 1rem;
+}
+
+.subs-section .subs-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Explore section */
+.explore-section {
+    padding: 1.2rem 0;
+    border-bottom : solid 1px rgb(194, 194, 194);
+}
+
+.explore-section .nav-link,
+.explore-title {
+    padding: 0.7rem 1rem;
+}
+
+.explore-section .explore-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* youtube section */
+.youtube-section {
+    padding: 1.2rem 0;
+}
+
+.youtube-section .nav-link,
+.youtube-title {
+    padding: 1rem 1rem;
+}
+
+.youtube-section .nav-link i {
+    color: red;
+}
+
+.youtube-section .youtube-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* main content */
+
+main {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 24%;
+    height: 400px;
+    margin-bottom: 2rem; /* لضمان وجود مسافة أسفل كل صف */
+}
+
+.video-picture {
+    width: 100%;
+}
+
+.video-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.video-info {
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.video-user span {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+.video-details {
+    margin-left: 10px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.video-info .title {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.more-info {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.more-info p{
+    margin-bottom: 0.4rem;
+}
+

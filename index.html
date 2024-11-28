@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Youtube</title>
+</head>
+
+<body>
+    <header>
+            <div class="left-section">
+                <div class="menu-icon">
+                    <a href="#">
+                        <span class="material-symbols-outlined">menu</span>
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href=""><img src="images/youtube.logo2.png" /></a>
+                </div>
+            </div>
+
+            <div class="mid-section">
+                <form action="" method="get">
+                    <input type="search" placeholder="Search" name="search" />
+                    <button type="submit">
+                        <span class="material-symbols-outlined"> search </span>
+                    </button>
+                </form>
+                <div class="mic-icon">
+                    <i class="fa-solid fa-microphone fa-flip-horizontal fa-2xs"></i>
+                </div>
+            </div>
+            <div class="right-section">
+                <a href="#" class="video-icon">
+                    <span class="material-symbols-outlined"> video_call </span>
+                </a>
+                <a href="#" class="noti-icon">
+                    <span class="material-symbols-outlined"> notifications </span>
+                </a>
+                <a href="#" class="user-icon">
+                    <span class="material-symbols-outlined"> account_circle </span>
+                </a>
+            </div>
+    </header>
+    <div class="area-container">
+        <aside>
+            <nav>
+                <div class="first-seciton">
+                    <a href="#" class="nav-link active" autofocus>
+                        <i class="fa-solid fa-house"></i>
+                        <p id="active-p">Home</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">subscriptions</span>
+                        <p>Subscriptions</p>
+                    </a>
+                </div>
+                <div class="you-section">
+                    <a href="#" class="nav-link">
+                        <p id="active-p" class="you-title">You</p>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">history</span>
+                        <p id="active-p">History</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">playlist_play</span>
+                        <p id="active-p">Playlists</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">smart_display</span>
+                        <p id="active-p">Your videos</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">lightbulb_2</span>
+                        <p id="active-p">Your courses</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">podcasts</span>
+                        <p id="active-p">Your podcasts</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <p id="active-p">Watch later</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <p id="active-p">Liked videos</p>
+                    </a>
+                </div>
+                <div class="subs-section">
+                    <p id="active-p" class="subs-title">Subscriptions</p>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">face</span>
+                        <p id="active-p">Akane</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">face_5</span>
+                        <p id="active-p">Keo</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">face_6</span>
+                        <p id="active-p">Yinlin</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">face_3</span>
+                        <p id="active-p">Jinhsi</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">person_off</span>
+                        <p id="active-p">Offline</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">face_3</span>
+                        <p id="active-p">Cameliya</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">face</span>
+                        <p id="active-p">Rover</p>
+                    </a>
+                    <a href="#explore" class="nav-link">
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                        <p id="active-p">Show more</p>
+                    </a>
+                </div>
+                <div class="explore-section" id="explore">
+                    <p id="active-p" class="explore-title">Explore</p>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">local_fire_department</span>
+                        <p id="active-p">Trending</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">music_note</span>
+                        <p id="active-p">Music</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">live_tv</span>
+                        <p id="active-p">live</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">sports_esports</span>
+                        <p id="active-p">Your courses</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">emoji_events</span>
+                        <p id="active-p">Your podcasts</p>
+                    </a>
+                </div>
+                <div class="youtube-section">
+                        <p id="active-p" class="youtube-title">More from Youtube</p>
+                    <a href="#" class="nav-link">
+                        <i class="fa-brands fa-youtube"></i>
+                        <p id="active-p">Youtube Premium</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <p id="active-p">Youtube Studio</p>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                        <p id="active-p">Youtube Kids</p>
+                    </a>
+                </div>
+            </nav>
+        </aside>
+        <main>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-picture">
+                    <img src="images/light.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <div class="video-user">
+                        <span class="material-symbols-outlined">face_6</span>
+                    </div>
+                    <div class="video-details">
+                        <p class="title"> هل تريد انشاء حسابك على قوقل؟كيف تنجح بحياتك وتصير مليونير شوف الفيديو بسرعة </p>
+                        <div class="more-info">
+                            <p>Horo Code</p>
+                            <p>1M View '3 Months Ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
